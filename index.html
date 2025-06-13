@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessories Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #111;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-image: url('https://m.media-amazon.com/images/I/81om+a5jIdL._AC_UF1000,1000_QL80_.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 700px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 8px 16px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #111;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 90%;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    footer {
+      background: #111;
+      color: #eee;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AccessoryHub</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <div>
+      <h1>Discover Unique Accessories That Define Your Style</h1>
+      <p>Shop the latest in fashion, tech, and lifestyle accessories.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://image.made-in-china.com/202f0j00UdHcWqMgHEoD/Poedagar-615-Business-Casual-Wristwatch-Waterproof-Luminous-Date-Week-Men-s-Watch.webp" alt="Wristwatch">
+        <div class="product-info">
+          <h3>Elegant Wristwatch</h3>
+          <p>Minimalist design with premium leather strap.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRPOr-8ZNMpxtXTOsggEu5BJX63O_9bZwDZTNhCPpbQM4C5WY9mKOoLB0RWNCA7lzaD2TD8KgVCyHxS0T6GPK5BsdGxdqRCIUSd2Qe9owoI0cvvQsFLNKeoVj4"alt="Sunglasses" >
+        <div class="product-info">
+          <h3>CLASSIC SUNGLASSES</h3>
+          <p>Perfect blend of UV protection and fashion.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTpGdRQxkNDYR8gRpNXw43tn9liammtbAmKYgB_Tv8BcOmWV88CqtayTs--2SZKtvt4ARcb0q80UJeUFBNR13r9pzpkTOfY8SAJfyPBo7ZaSuGK7G2oDoXpKA" height="150px" width="90%" alt="Backpack">
+        <div class="product-info">
+          <h3>URBAN BACKPACK</h3>
+          <p>Designed for everyday adventures and comfort.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTSOfyhp-3IXvYWKU6bJCeG5NUGg4gei0WUDER3EROsBsEO6xY0b66XSzFjEAsT8ap9GS3WpIudQpstQfab5p643tLFsj2pDPCQE1oT5E-buqfueU38BnB8DAM" alt="cap">
+        <div class="product-info">
+          <h3>CAP</h3>
+          <p>Elegant touch to elevate any outfit.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS34NRNDLMJaVdlv9IhANhFNId2_ZRtWwGZ_Nm2I4RYmB2Bsm0KlPLUf2BkNJhzJ7XmuSZIReN1DfyxhHL65GmtL_1H3VWvQg">
+        <div class="product-info">
+          <h3>HOODIE</h3>
+          <p>wear at any jeans or trouser</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://wrogn.com/cdn/shop/files/4_82e8deb3-4b39-47c4-9ab6-10b879e94ea1.webp?v=1738839549&width=360">
+        <div class="product-info">
+          <h3>JEANS</h3>
+          <p>Wear at party</p>
+        </div>
+      </div>
+       <div class="product">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRiBuS1kCFE4BK7C7dPnPuwzzlHN6l31kZ07xodL9VKcCcXZj69L1D8b9gkviBdsFaBbrzI2sTwjcry__e1Ty3oRk86dAs8Z4QmsiVM68AlCvhadb34F193mQ">
+        <div class="product-info">
+          <h3>BRACELETS FOR BOYS</h3>
+          <p>wear at any time</p>
+        </div>
+      </div>
+       <div class="product">
+        <img src="https://mesmerizeindia.com/cdn/shop/files/Hanuman_Chalisa_Micro_Carved_Black_Tag_Necklace3_80912d1a-9067-4d01-9f0e-8c4a5b3fa3cd.jpg?v=1736169197&width=600">
+        <div class="product-info">
+          <h3>CHAIN</h3>
+          <p>ONLY FOR HANUMAN BHKAT</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AccessoryHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
