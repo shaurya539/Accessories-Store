@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> ACCESSORY HUB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html
+    {
+      scroll-behavior: smooth;
+    }
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body 
+    {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header 
+    {
+      background: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+      z-index: 999;
+    }
+
+    header h1 
+    {
+      font-size: 28px;
+    }
+
+    nav a 
+    {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover
+    {
+      color: blueviolet;
+    }
+    .categories {
+      padding: 50px 40px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .categories h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .category-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .category-card {
+      background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .category-card p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+    }
+
+
+    .hero 
+    {
+      background: url('https://png.pngtree.com/png-clipart/20241127/original/pngtree-fashionable-men-and-women-shopping-together-png-image_17329436.png') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 
+    {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p 
+    {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero button 
+    {
+      background: #ff4c4c;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .hero button:hover 
+    {
+      background: #e63b3b;
+    }
+
+    .footer 
+    {
+      background: #111;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ACCESSORY HUB</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+    <h2>Stylish T-Shirts</h2>
+    <p>Trendy, Comfortable & Affordable</p>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="categories">
+  <h2>Shop by Category</h2>
+  <div class="category-container">
+    <div class="category-card">
+      <img src="https://img-c.udemycdn.com/course/750x422/5444528_d4e3_5.jpg" alt="T-Shirts">
+      <p>T-Shirts</p>
+    </div>
+    <div class="category-card">
+      <img src="https://offduty.in/cdn/shop/products/210369761_1080x.jpg?v=1721927302" alt="Pants">
+      <p>Pants</p>
+    </div>
+    <div class="category-card">
+      <img src="https://images-cdn.ubuy.co.in/67d5b5339a868c1e6254fae0-tacvasen-men-39-s-jackets-bomber-jacket.jpg" alt="Jackets">
+      <p>Jackets</p>
+    </div>
+    <div class="category-card">
+      <img src="https://www.ekinsport.com/media/opti_image/webp/catalog/product/cache/ab26c22a655754f041e4ec1ba42dece0/c/t/ct8013-116_chaussures-air-jordan-12-retro-blanc-homme-ct8013-116_01.webp" alt="Shoes">
+      <p>Shoes</p>
+    </div>
+  </div>
+</section> 
+  <footer class="footer">
+    <p>&copy; 2025 ACCESSORY HUB. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html> 
